@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="media.css">
     <style>
+        mobile firts
         *{
             margin: 0;
             padding: 0;
@@ -15,18 +17,21 @@
             box-sizing: border-box;
         }
        button{
-            padding: 3px 10px;
+            padding:10px;
             margin:10px;
             border: 0;
+            color: white;
             border-radius: 10px;
             cursor: pointer;
+            font-weight: bolder;
        }
      
        .container{
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%,-50%);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            transform: translate(0%,50%);
+            
        }
        
         .roxo{
@@ -38,7 +43,7 @@
             transition: all 1s ease-in-out;
         }
         .laranja{
-            background-color:#b4770593;
+            background-color:rgba(255, 68, 0, 0.808);
             transition: all 1s ease-in-out;}
         .roxo:hover{
             box-shadow: 0px 0px 3px 4px rgba(41, 1, 78, 0.616);
@@ -69,7 +74,8 @@
             transition: all 0.25s ease-in-out;
         }
         .preto{
-            background-color: black;
+            
+            background-color: rgb(0, 0, 0);
             transition: all 1s ease-in-out;
         }
         .preto:hover{
@@ -85,7 +91,7 @@
         <button class="laranja" id="btnl">Laranja</button>
         <button class="azul" id="btna">Azul</button>
         <button class="verde" id="btnve">Verde</button>
-        <a href="cordotrabalho.html" target="_blank" rel="external"><button class="preto">Preto</button></a>
+       <button class="preto" id="btnp">Preto</button></a>
     </div>
     <script>
         document.getElementById('btnr').addEventListener('click', function(){
@@ -103,8 +109,10 @@
         document.getElementById('btnve').addEventListener('click', function(){
             document.querySelector('body').setAttribute('class', 'verde')
         })
-      
-
+        document.getElementById('btnp').addEventListener('click', function(){
+            document.querySelector('body').setAttribute('class', 'preto')
+        })
+        
     </script>
 </body>
 </html>

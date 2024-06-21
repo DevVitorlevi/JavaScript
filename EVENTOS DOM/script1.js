@@ -7,4 +7,4 @@ function somar(){
     var n2 = Number(tn2.value)
     var s = n1+n2
     res.innerHTML=`A soma de ${n1} + ${n2} = <strong> <i>${s}</i></strong> `
-}
+} 
