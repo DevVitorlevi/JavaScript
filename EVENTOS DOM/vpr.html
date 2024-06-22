@@ -6,7 +6,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="media.css">
     <style>
-        mobile firts
+      
         *{
             margin: 0;
             padding: 0;
@@ -29,8 +29,9 @@
        .container{
             display: flex;
             flex-direction: column;
-            justify-content: center;
-            transform: translate(0%,50%);
+            width: 150px;
+
+            transform: translate(100%,100%);
             
        }
        
@@ -73,15 +74,7 @@
             box-shadow: 0px 0px 3px 4px #03c2699f;
             transition: all 0.25s ease-in-out;
         }
-        .preto{
-            
-            background-color: rgb(0, 0, 0);
-            transition: all 1s ease-in-out;
-        }
-        .preto:hover{
-            box-shadow: 0px 0px 3px 4px rgba(0, 0, 0, 0.555);
-            transition: all 0.25s ease-in-out;
-        }
+    
     </style>
 </head>
 <body>
@@ -91,7 +84,7 @@
         <button class="laranja" id="btnl">Laranja</button>
         <button class="azul" id="btna">Azul</button>
         <button class="verde" id="btnve">Verde</button>
-       <button class="preto" id="btnp">Preto</button></a>
+      
     </div>
     <script>
         document.getElementById('btnr').addEventListener('click', function(){
@@ -109,9 +102,7 @@
         document.getElementById('btnve').addEventListener('click', function(){
             document.querySelector('body').setAttribute('class', 'verde')
         })
-        document.getElementById('btnp').addEventListener('click', function(){
-            document.querySelector('body').setAttribute('class', 'preto')
-        })
+        
         
     </script>
 </body>
