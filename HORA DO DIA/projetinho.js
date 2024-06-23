@@ -3,7 +3,9 @@ function carregar() {
     var img =document.querySelector(".img")   
     var sd = document.querySelector(".hora")
     var tempo = new Date()          
-    var hora = tempo.getHours()
+   var hora = tempo.getHours()
+   
+
 
     msg.innerHTML = `Agora são ${hora} horas`  
 
