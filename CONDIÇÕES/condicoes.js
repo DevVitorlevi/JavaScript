@@ -1,12 +1,15 @@
+var imc = 40
+if(imc<  18,5){
+    console.log("asdghlfkabhjskdl")
+}else if(imc<=24,9){
+    console.log( "Peso Normal")
+}else if(imc<=29,9){
+    console.log("SobrePeso")
+}else if(30<imc>34,9){
+    console.log("Obesidade Grau I")
 
-function calcular(){
-    var txtv = document.getElementById('txtvel')
-    var vel= Number(txtv.value)
-    var res = document.getElementById('res')
-    res.innerHTML=`<p>Sua velocidade atual é de <strong>${vel}KM/H</strong></p>`
-    if( vel >= 60){
-        res.innerHTML +='<p>Você ultrapassou o limte de velocidade, Está <strong>MULTADO!</strong></p>'
-    }
-    res.innerHTML += 'Diriga sempre com o cinto de sengurança'
-   
+}else if(35<imc>39,9){
+    console.log("Obesidade Grau III")
+}else{
+    console.log("TÁ GORDÃO EM PAE, VULGO GORDÃO ")
 }
