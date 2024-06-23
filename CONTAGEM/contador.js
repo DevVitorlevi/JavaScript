@@ -7,6 +7,7 @@ function contar(){
     if (ini.value.length == 0 || fim.value.length == 0 || pass.value.length == 0){
         res.innerHTML = 'Impossivel contar'
         alert('[ERRO] FALTAM DADOS')
+        //Verificando se as caixas estão vazia
     }
     else {
         res.innerHTML = 'Contando.. <br/> '
@@ -21,7 +22,7 @@ function contar(){
         //contagem cresente 
         if (i < f ){
         for(let c = i; c <= f; c+=p){
-            res.innerHTML += ` ${c} \u{1f449}`
+            res.innerHTML += ` ${c} \u{1f449}`//concatenando a resposta
         }
     }
     else{
@@ -30,7 +31,7 @@ function contar(){
             res.innerHTML += ` ${c} \u{1f449}`
         }
     }
-    res.innerHTML += ` \u{1f3c1} `
+    res.innerHTML += ` \u{1f3c1} `//concatenando a resposta com a bandeira
     
 }
 }

@@ -1,16 +1,16 @@
 document.getElementById('btna').addEventListener('click', function(){
     document.querySelector('body').setAttribute
-    ('class','azul');
+    ('class','azul'); //pega o valor do botao e adiciona um atributo ao body chamado azul
 })
 document.getElementById('btnv').addEventListener('click', function(){
     document.querySelector('body').setAttribute
-    ('class','vermelho');
+    ('class','vermelho');//pega o valor do botao e adiciona um atributo ao body chamado vermelho
 })
 document.getElementById('btnam').addEventListener('click', function(){
     document.querySelector('body').setAttribute
-    ('class','amarelo');
+    ('class','amarelo');//pega o valor do botao e adiciona um atributo ao body chamado amarelo
 })
 document.getElementById('btnr').addEventListener('click', function(){
     document.querySelector('body').setAttribute
-    ('class','roxo');
+    ('class','roxo');//pega o valor do botao e adiciona um atributo ao body chamado roxo
 })
