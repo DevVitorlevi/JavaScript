@@ -2,7 +2,7 @@ function clique(){
     let altura = document.getElementById('txta')
     let peso =document.getElementById('txtp')
     let res = document.getElementById('res')
-    if(altura.value.length == 0 || peso.value.length ==0){
+    if(altura.value.length == 0 || peso.value.length == 0){
         res.innerHTML='Impossivel Calcular'
         alert('[ERRO] Digite Algo!!!')
     }else{
