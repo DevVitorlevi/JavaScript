@@ -1,21 +1,11 @@
-var c = 1
-do {
-        console.log(c)
-        c++
-}
-while(c <=10)
+var a =0
+var b=1
+c=(a^b)
+console.log(c)
 
 
 
 
 
 
-/*
-
-var c = 1
-while ( c <=6000)
-{
-        console.log(c)
-        c++// c = c + 1
-
-*/
+ 
