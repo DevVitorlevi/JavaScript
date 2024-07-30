@@ -51,6 +51,6 @@ transform: translate(0%,100%);
     transition: all ease-in-out 0.2s;
 }
 .azul:hover{
-    box-shadow: 3px 2px 15px #3838ce;
+    box-shadow: 3px 2px 15px#3838ce ;
   }
 
