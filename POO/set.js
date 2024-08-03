@@ -18,6 +18,7 @@ class Car{
             this.vel =100
         }
     }
+    //Metodos
     info(){
         console.log(`Nome:${this.nome}`)
         console.log(`Tipo:${this.tipo}`)

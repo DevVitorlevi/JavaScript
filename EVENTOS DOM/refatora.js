@@ -61,6 +61,6 @@ function Box(){
         box.style.background='#191970'
         box.innerHTML='Saiu!'
         box.style.color='#ffffff'
-        box.style.boxShadow= '10px 10px 125px #3838ce'
+        box.style.boxShadow= '10px 10px 125 '
     })
 }
