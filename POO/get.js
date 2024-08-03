@@ -20,7 +20,7 @@ class Car{
     }
     getInfo(){
         return [this.nome,this.tipo,this.vel]
-    }//O metodo Get serve para returnar as propiedades  do objetos
+    }//O metodo Get serve para retornar as propiedades  do objetos
 }
 var c1 = new Car ("Relâmpago Marquinhos",1)
 var c2 = new Car ("Pálio 2 Portas",2)
