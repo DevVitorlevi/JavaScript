@@ -1,4 +1,4 @@
-function soma (n1=0,n2=0){
+function soma (n1,n2){
     let res = n1+n2
     return res
 }
