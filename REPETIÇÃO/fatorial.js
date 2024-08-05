@@ -4,4 +4,4 @@ while(num>=1){
     fat*=num
     num--
 }
-console.log(fat)
+console.log(num)
