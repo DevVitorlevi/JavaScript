@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            background-color: #00ffaa;
+            width: 200px;
+            height: 200px;
+            border-radius: 35px;
+            position:absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            font-size: 120px;
+            line-height: 200px;
+            text-align: center;
+        }
+      
+    </style>
+</head>
+<body>
+    <div class="container">
+        🤫
+    </div>
+</body>
+<script>
+    var mybox = document.querySelector('.container')
+
+    document.addEventListener('keydown', e =>{
+        if(e.key == 'Enter'){
+            mybox.textContent='😄'
+            mybox.style.background='#4fffff'
+        }
+    })
+
+    document.addEventListener('keyup', e =>{
+        if(e.key == 'Enter'){
+            mybox.textContent='🤫'
+            mybox.style.background='#00ffaa  '
+        }
+    })
+</script>
+</html>
