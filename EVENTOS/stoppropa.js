@@ -1,15 +1,12 @@
-const Box = document.querySelector('.box')
-const btn1 = document
-const Cursos = [...document.querySelectorAll('.curso')] 
-
-Box.addEventListener('click', () =>{
-    console.log('Ainnn Nobruzera Apelão')
-})
+const Cursos = [...document.querySelectorAll('.curso')]
 
 Cursos.map((el) =>{
     el.addEventListener('click', (evt) =>{
-        evt.stopPropagation()
-        
+        const curso = evt.target
+        curso.classList.toggle('selecionado')
+       
     })
 })
+
+
 

@@ -7,7 +7,8 @@ const Cursos = [...document.querySelectorAll('.curso')]
 Cursos.map((el) =>{
     el.addEventListener('click',(evt)=>{ //quando clicar no curso 
         const curso = evt.target //Target Usado Para demostar o elemento que foi disparado
-        curso.classList.toggle('selecionado')//toggle é uma maneira de conferir se a classe esta acionada ou nao 
+        curso.classList.toggle('selecionado')
+        
     })
 })
 
