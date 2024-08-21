@@ -16,3 +16,4 @@ Carros.map((el)=>{
     NovoElemento.appendChild(del)
     Box.appendChild(NovoElemento)
 })
+// removeChild tem a capacidade de remover elementos filhos 
