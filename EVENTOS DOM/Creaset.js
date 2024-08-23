@@ -1,5 +1,5 @@
 const Box =document.querySelector('.box')
-const Carros = ['Opala','UNO','Chevette','Palio','Corsa','Ford KA','Siena',]
+const Carros = ['Opala','UNO','Chevette','Palio','Corsa','Ford KA']
 
 Carros.map((el)=>{
     const NovoCarro = document.createElement('div')
