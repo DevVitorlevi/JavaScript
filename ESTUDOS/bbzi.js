@@ -19,8 +19,7 @@ const CriarElemento=(carro)=>{
     radio.setAttribute('type','radio')
     radio.setAttribute('name','rb_curso')
 
-
-    comandos.appendChild(radio)
+    
     NovoElemento.appendChild(comandos)
     return NovoElemento
 }

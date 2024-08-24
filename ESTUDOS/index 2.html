@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+    padding: 0px;
+    margin: 0px;
+    border: none;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+button{
+    width: 150px;
+    height: 40px;
+    background-color: #025;
+    color: #fff;
+    cursor: pointer;
+    margin-bottom: 5px;
+    border-radius: 10px;
+}
+.curso{
+    display: flex;
+    justify-content: center;
+    width: 200px;
+    border: 4px solid #888;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 5px 0px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.caixa,.box{
+    border: 4px solid #000;
+    background-color: #eee;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+    margin: 5px;
+    height: 500px;
+    width: 300px;
+}
+
+.caixaFuncionalidades{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+}
+
+#caixaNovoCurso input{
+    margin: 10px;
+    padding: 5px;
+}
+.selecionado{
+    background-color: #270808 !important;
+    font-weight: bold;
+    color: #fff;
+}
+    </style>
+</head>
+<body>
+    
+    <main>
+            <div id="caixaNovoFuncionalidades" class="caixa">
+                <div id="caixaNovoCurso" class="caixaFuncionalidades">
+                    <label>Nome do curso</label>
+                    <input type="text" name="nomeCurso" id="nomeCurso"/>
+                    <button id="btnAdicionarNovoCursoa">Adicionar Antes</button>
+                    <button id="btnAdicionarNovoCursod">Adicionar Depois</button>
+                </div>
+                <div id="caixaRemoverCurso" class="caixaFuncionalidades">
+                    <button id="btnRemoverCurso">Remover Selecionado</button>
+                </div>
+                <div id="caixaCursoSelecionado" class="caixaFuncionalidades">
+                    <button id="btnCursoSelecionado">Curso Selecionado</button>
+                </div>
+            </div>
+            <div class="box">
+                <!-- Cursos serão adicionados aqui -->
+            </div>
+        </main>
+        <script src="toggle.js"></script>
+</body>
+</html>
