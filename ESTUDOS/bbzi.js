@@ -48,20 +48,20 @@ const RadioSelect=()=>{//transformando em função para poder ser chamada varias
 })
 RemoveElement.addEventListener('click',()=>{
     try{
-        const RadioS = RadioSelect()
-        const Carro = RadioS.parentNode.parentNode
-        Carro.remove()
+        const RadioS = RadioSelect()//Radio Selecionado Ira chamar a funçao radioSelect() para retornar o radio selecionado
+        const Carro = RadioS.parentNode.parentNode// Esta pegando o pai do Radio selciondo que no caso é a class comandos e pegando o pai desta classe que seria a classe curso
+        Carro.remove() // removendo a classe curso
     }catch(ex){
         alert('Selecione Um Curso')
     }
 })
 AddElementBefore.addEventListener('click',()=>{
     try{
-        if(NameCarro.value != ""){
+        if(NameCarro.value != ""){//verificando se o input esta vazio{
             const RadioS = RadioSelect()
-            const Carro = RadioS.parentNode.parentNode
-            const NewCarro=CriarElemento(NameCarro.value)
-            Box.insertBefore(NewCarro,Carro)
+            const Carro = RadioS.parentNode.parentNode//peagndo a classe curso
+            const NewCarro=CriarElemento(NameCarro.value) //chamando a função para criar o elemento de acordo com o valor do input 
+            Box.insertBefore(NewCarro,Carro)//insert Before serve para adicionar antes, levando dois parâmetros que são o Elemento e após aonde vai ser adicionado ex:(NewCarro,Carro)
         }else{
             alert('Digite Algo')
         }
@@ -71,11 +71,11 @@ AddElementBefore.addEventListener('click',()=>{
 })
 AddElementAfter.addEventListener('click',()=>{
     try{
-        if(NameCarro.value!=""){
+        if(NameCarro.value!=""){ //verificando se o input esta vazio
             const RadioS = RadioSelect()
             const Carro = RadioS.parentNode.parentNode
             const NewCarro=CriarElemento(NameCarro.value)
-            Box.insertBefore(NewCarro,Carro.nextSibling)
+            Box.insertBefore(NewCarro,Carro.nextSibling)//desta Vez para que ele adicione depois ira pegar o elemento e tornar ele como proximo irmão
         }else{
         alert('Digite Algo')
         }
