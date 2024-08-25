@@ -11,10 +11,10 @@ btn.addEventListener('click',()=>{
     elArr.find((el,i)=>{
         if(el.toUpperCase()==pesqui.value.toUpperCase()){
             res.innerHTML=`Valor encontrado ${el} e sua Posição é ${i+1}`
-            return e
         }
     })
 })
+
 document.addEventListener('keydown',(k)=>{
     if(k.key =='Enter'){
         res.innerHTML='Valor não Encontrado'
