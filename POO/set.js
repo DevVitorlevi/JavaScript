@@ -7,10 +7,10 @@ class Car{
         }else if(ctipo == 2){
             this.tipo = "Popular"
             this.vel = 160
-        }else if (ctipo == 2 ){
+        }else if (ctipo == 3 ){
             this.tipo="Picapes"
             this.vel = 110
-        }else if(ctipo==3){
+        }else if(ctipo==4){
             this.tipo="SUV"
             this.vel= 180
         }else{
