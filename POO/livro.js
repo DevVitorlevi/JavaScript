@@ -4,7 +4,6 @@ class Livro{
     #desc
     #autor
     #ano
-
     getInfo(){
         return [this.#cod,this.#title,this.#desc,this.#autor,this.#ano]
     }
