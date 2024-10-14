@@ -1,11 +1,11 @@
 const idade = [16,27,92,62,84,12,34]
 
-const maior =idade.filter((val)=>{
+const maior =idade.filter((val,indice)=>{
     if(val >= 18)
         return val
 })
 
-const menor =idade.filter((val)=>{
+const menor =idade.filter((val,indice)=>{
     if(val < 18)
         return val
 })
